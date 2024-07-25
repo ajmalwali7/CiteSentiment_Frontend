@@ -92,15 +92,10 @@ export function MyHome() {
                     <p className="text-base md:text-xl">
                       <strong>
                         <em>CiteSentiment,</em>
-                      </strong>{" "}
-                      In the ever-evolving world of academia, managing and
-                      analyzing research papers can be a daunting task. Welcome
-                      to CiteSentiment, the ultimate web application designed to
-                      streamline your academic research experience. Our
-                      innovative platform empowers researchers, students, and
-                      academics to effortlessly upload, analyze, and visualize
-                      research papers, transforming the way you engage with
-                      scholarly work.{" "}
+                      </strong>
+                      {` A pioneering initiative dedicated to transforming the way researchers and academics understand citation sentiments within scholarly articles.`}
+                      <br />
+                      {`At the heart of our mission lies a commitment to providing insightful analysis that enhances the research process and fosters a deeper understanding of academic discourse. `}
                       <a
                         className="hover:cursor-pointer opacity-70 hover:opacity-100"
                         onClick={() => navigate("/about-us")}
@@ -111,15 +106,8 @@ export function MyHome() {
                       <br />
                       <strong>
                         <em>Our Vision</em>
-                      </strong>{" "}
-                      is simple yet profound: to empower Afghan students with
-                      the knowledge and skills they need to shape their own
-                      futures. We believe that education is not just a right but
-                      a fundamental tool for personal growth, community
-                      development, and societal progress. We are driven by the
-                      belief that when students are educated, they become agents
-                      of change, capable of overcoming obstacles and achieving
-                      their dreams,{" "}
+                      </strong>
+                      {` is to empower researchers with the tools and insights they need to navigate the complex landscape of academic citations. We believe that understanding the sentiment behind citations can lead to more informed research and ultimately, a more connected and collaborative academic community. `}
                       <a
                         className="hover:cursor-pointer opacity-70 hover:opacity-100"
                         onClick={() => navigate("/about-us")}
@@ -130,12 +118,8 @@ export function MyHome() {
                       <br />
                       <strong>
                         <em>Our Mission</em>
-                      </strong>{" "}
-                      is to provide a safe, inclusive, and accessible online
-                      learning environment where students can thrive
-                      academically and personally. We strive to bridge the
-                      education gap that has left many Afghan students without
-                      access to formal schooling,{" "}
+                      </strong>
+                      {` At CiteSentiment, our mission is to provide a cutting-edge platform that offers accurate and nuanced sentiment analysis of citations. We aim to: Enhance Research Quality, Foster Collaboration, and Support Academic Growth `}
                       <a
                         className="hover:cursor-pointer opacity-70 hover:opacity-100"
                         onClick={() => navigate("/about-us")}
@@ -203,12 +187,9 @@ export function MyHome() {
                     </div>
                   </div>
                   <p className="text-xs text-primary opacity-70">
-                    A pioneering initiative dedicated to transforming the lives
-                    of students in Afghanistan through accessible online
-                    education. At the heart of our mission lies a commitment to
-                    breaking down barriers and ensuring that every student,
-                    regardless of their circumstances, has the opportunity to
-                    receive a quality education,{" "}
+                    {`A pioneering initiative dedicated to transforming the way researchers and academics understand citation sentiments within scholarly articles.`}
+                    <br />
+                    {`At the heart of our mission lies a commitment to providing insightful analysis that enhances the research process and fosters a deeper understanding of academic discourse. `}
                     <span className="hover:cursor-pointer font-medium">
                       <a onClick={() => navigate("/about-us")}>
                         <em>read more...</em>
