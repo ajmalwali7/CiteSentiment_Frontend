@@ -12,7 +12,7 @@ export function Paper() {
   useEffect(() => {
     (async () => {
       let pap = await axios.get(
-        `http://localhost:3000/api/papers/${handle.handle}`,
+        `https://citesentiment-backend.onrender.com/api/papers/${handle.handle}`,
         {
           headers: {
             Authorization: `Bearer ${document.cookie

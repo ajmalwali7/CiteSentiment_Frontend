@@ -42,7 +42,10 @@ export function Login() {
       email: e.target[0].value.toLowerCase(),
     };
     try {
-      await axios.post(`http://localhost:3000/api/users/forgotPassword`, email);
+      await axios.post(
+        `https://citesentiment-backend.onrender.com/api/users/forgotPassword`,
+        email
+      );
       document.querySelector("form").reset();
       setTokenSent(true);
     } catch (err) {
@@ -70,7 +73,7 @@ export function Login() {
     };
     try {
       const res = await axios.patch(
-        `http://localhost:3000/api/users/resetPassword/${e.target[0].value}`,
+        `https://citesentiment-backend.onrender.com/api/users/resetPassword/${e.target[0].value}`,
         body
       );
       document.cookie = `jwt=${res.data.token}; max-age=${new Date(
@@ -102,7 +105,7 @@ export function Login() {
     setIsLoading(true);
     try {
       const res = await axios.post(
-        `http://localhost:3000/api/users/login`,
+        `https://citesentiment-backend.onrender.com/api/users/login`,
         reqBody
       );
       document.cookie = `jwt=${res.data.token}; max-age=${new Date(

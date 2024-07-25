@@ -25,7 +25,7 @@ export function Settings() {
     setIsLoading(true);
     try {
       const res = await axios.patch(
-        "http://localhost:3000/api/users/updateMe",
+        "https://citesentiment-backend.onrender.com/api/users/updateMe",
         { ...reqBody, id: user._id },
         {
           headers: {

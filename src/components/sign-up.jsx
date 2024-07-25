@@ -27,7 +27,10 @@ export function Signup() {
     setIsLoading(true);
     console.log(reqBody);
     try {
-      await axios.post("http://localhost:3000/api/users/signup", reqBody);
+      await axios.post(
+        "https://citesentiment-backend.onrender.com/api/users/signup",
+        reqBody
+      );
     } catch (err) {
       if (err.response) {
         if (err.response.status == 400) {

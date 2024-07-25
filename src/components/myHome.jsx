@@ -26,14 +26,18 @@ export function MyHome() {
     const paper = new FormData();
     paper.append("paper", e.target[0].files[0], "file");
     try {
-      const res = await axios.post("http://localhost:3000/api/papers", paper, {
-        headers: {
-          "Content-Type": `multipart/form-data; boundry=${paper._boundry}`,
-          Authorization: `Bearer ${document.cookie
-            .match("(^|;)\\s*" + "jwt" + "\\s*=\\s*([^;]+)")
-            ?.pop()}`,
-        },
-      });
+      const res = await axios.post(
+        "https://citesentiment-backend.onrender.com/api/papers",
+        paper,
+        {
+          headers: {
+            "Content-Type": `multipart/form-data; boundry=${paper._boundry}`,
+            Authorization: `Bearer ${document.cookie
+              .match("(^|;)\\s*" + "jwt" + "\\s*=\\s*([^;]+)")
+              ?.pop()}`,
+          },
+        }
+      );
       localStorage.setItem("user", JSON.stringify(res.data.user));
       navigate(`/paper/${res.data.doc.id}`);
       dispatch(setUser(res.data.user));
