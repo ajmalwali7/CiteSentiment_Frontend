@@ -130,7 +130,7 @@ export function Login() {
     }
   }
   dispatch(noNav());
-  document.title = "Log In: Research Spider";
+  document.title = "Log In: CiteSentiment";
 
   return (
     <>

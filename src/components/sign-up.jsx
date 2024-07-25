@@ -59,7 +59,7 @@ export function Signup() {
   }
 
   dispatch(noNav());
-  document.title = "Sign Up: Research Spider";
+  document.title = "Sign Up: CiteSentiment";
   return (
     <>
       <div className="flex flex-row justify-center items-center w-screen h-screen fixed top-0">
